@@ -1,3 +1,4 @@
+import Cart from 'pages/Cart';
 import Details from 'pages/Details';
 import Homepage from 'pages/HomePage';
 import React from 'react';
@@ -12,6 +13,7 @@ export default function App() {
      <Routes>
      <Route path="/" element={<Homepage />} />
      <Route path="/details" element={<Details />} />
+     <Route path="/cart" element={<Cart />} />
       </Routes>
    </div>
   )
