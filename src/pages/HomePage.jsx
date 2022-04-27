@@ -1,3 +1,5 @@
+import useModalDOM from "helpers/hooks/useModalDOM";
+import useScrollAnchor from "helpers/hooks/useScrollAnchor";
 import Asidemenu from "parts/AsideMenu";
 import Clients from "parts/Clients";
 import Footer from "parts/Footer";
@@ -8,6 +10,9 @@ import Justarrived from "parts/HomePage/JustArrived";
 import React from "react";
 
 const Homepage = (props) => {
+
+  useScrollAnchor()
+  useModalDOM();
   return (
     <>
       <Header />
